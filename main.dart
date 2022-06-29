@@ -7,7 +7,7 @@
 //   print("last input");
 //   int? n3 = int.parse(stdin.readLineSync()!);
 
-//   if(n1 > n2 && n1 > n3){
+//  if(n1 > n2 && n1 > n3){
 //     print('Largest number is $n1');
 //   }
 //   if(n2 > n1 && n2 > n3 ){
@@ -17,6 +17,8 @@
 //     print('Largest number is $n3');
 //   }
 // }
+
+  
   
   
 // import 'dart:io';
@@ -31,17 +33,28 @@
 //   }
 
   
-  import 'dart:io';
-  void main() {
-    stdout.write("what's your lucky number?");
-    int? num = int.parse(stdin.readLineSync()!);
+//   import 'dart:io';
+//   void main() {
+//     stdout.write("what's your lucky number?");
+//     int? num = int.parse(stdin.readLineSync()!);
 
-    if(num  > 0){
-      print('positive');
-    }
-    if(num < 0){
-      print('negative');
-    }
+//     if(num  > 0){
+//       print('positive');
+//     }
+//     if(num < 0){
+//       print('negative');
+//     }
+  
+// }
+void main() {
+  var number = 42;
+  print(number.runtimeType);
+  number = 'hamidu';
+  print(number.runtimeType);
+  dynamic name = 'Hamidu';
+  print(name.runtimeType);
+  name = 10;
+  print(name.runtimeType);
   
 }
 
