@@ -5,5 +5,5 @@ void main() {
   print('input');
   num = int.parse(stdin.readLineSync()!);
 
-  num == (num % 2 == 0)? print('Even') : print('odd');
+ (num % 2 == 0)? print('Even') : print('odd');
 }
