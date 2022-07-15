@@ -1,11 +1,13 @@
-import 'dart:io';
-
-void main() {
+void main(List<String> args) {
   String flower = 'rose';
-  var tree = 'apple';
-  print('before swapping');
-  print('flower = rose, tree = apple');
-  
-  print('flower = $tree, tree = $flower');
-  
+  String tree = 'apple';
+  String apple = 'fruit';
+
+print('before swapping : flower =$flower, tree = $tree');
+
+apple = flower;
+flower = tree;
+tree = apple;
+
+print('After swapping : flower =$flower, tree = $tree');
 }
